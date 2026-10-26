@@ -26,7 +26,7 @@ The accompanying recruitment guide is a work in progress and covers the topics o
 The practical exercise uses the **Raspberry Pi Pico 2 W**.
 
 <p align="center">
-  <img src="assets/RB_Pico_2W_PinOut.png" alt="Raspberry Pi Pico 2 W pinout" width="760">
+  <img src="assets/RB_Pico_2W_PinOut.PNG" alt="Raspberry Pi Pico 2 W pinout" width="760">
 </p>
 
 Check the pinout and the guide before wiring the circuit. Confirm the GPIO assignments used by your implementation before powering the board.
