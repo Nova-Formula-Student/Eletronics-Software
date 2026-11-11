@@ -17,11 +17,12 @@ void setup() {
   Serial.begin(115200); //Começo a transmitir imformação no monitor serial
 
   analogReadResolution (ADC_BITS); //Defenição da resolução em bits
+  int raw = analogRead( PIN_BRAKE_ADC);
+bool sensorFault = (raw < ADC_MIN_OK) || (raw > ADC_MAX_OK); //Defino o que é considerado uma falha do sistema
+
 }
 void loop() {
 
-int raw = analogRead( PIN_BRAKE_ADC);
-bool sensorFault = (raw < ADC_MIN_OK) || (raw > ADC_MAX_OK); //Defino o que é considerado uma falha do sistema
 
 if (sensorFault) {
 

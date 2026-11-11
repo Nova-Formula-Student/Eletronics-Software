@@ -6,13 +6,13 @@ void setup() {
  pinMode(PIN_BRAKE_BTN , INPUT_PULLUP); 
  pinMode(PIN_LED_RED , OUTPUT);
   //Defino a função de cada pino (input, output,...)
+  bool braking = (digitalRead (PIN_BRAKE_BTN )== LOW); 
+    //Crio uma variavel bolena que avalia se o travão está a ser pressionado
+    //Indico se o travão está ou não precionado
 }
 
 void loop() {
 
-  bool braking = (digitalRead (PIN_BRAKE_BTN )== LOW); 
-    //Crio uma variavel bolena que avalia se o travão está a ser pressionado
-    //Indico se o travão está ou não precionado
   if (braking){
   digitalWrite (PIN_LED_RED , HIGH); 
     //Crio uma condição lógica para caso a variável "braking" = True (logo o travão está precionado)
