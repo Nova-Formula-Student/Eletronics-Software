@@ -1,5 +1,5 @@
 const int PINO_PONTECIOMETRO = 26;
-const int PINO_BOTÃO = 15;
+const int PINO_BOTAO = 15;
 const int PINO_SAIDA_BL = 16;
 
 void setup() {
