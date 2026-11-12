@@ -1,0 +1,21 @@
+name: PR Check
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  verify-code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Replace the lines below with your team's build/test commands
+      - name: Check repository structure
+        run: |
+          echo "Running automated checks..."
+          # Example for Python:
+          # pip install flake8 && flake8 . --select=E9,F63,F7,F82
+          # Example for PlatformIO:
+          # pip install platformio && pio run
