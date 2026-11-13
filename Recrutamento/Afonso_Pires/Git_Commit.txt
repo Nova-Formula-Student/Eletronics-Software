@@ -1,0 +1,17 @@
+Primeiro, o que é um commit: é uma “fotografia” guardada das alterações, com uma mensagem a explicar o que mudou. Cada vez que carregas em “Commit changes” no GitHub, crias um.
+O problema que o squash resolve
+Enquanto trabalhas numa branch, vais fazendo vários commits pequenos. Por exemplo:
+	1	“Código brake light”
+	2	“corrigir limiar”
+	3	“typo”
+	4	“afinal era 0.7”
+Se a branch entrar na main assim, o histórico da main fica com os 4 commits, incluindo os “typo” e os “afinal…”. Isso polui o histórico.
+O que é o squash
+Squash quer dizer “esmagar”. Junta todos esses commits num só antes de entrarem na main:
+O resultado final do código é exatamente o mesmo. Só muda o histórico, que passa a ter um commit por pull request, limpo e com uma mensagem que descreve a alteração toda.
+Onde aparece no GitHub
+Quando um pull request é aceite, o botão de merge tem uma seta com três opções:
+	•	Create a merge commit: entram todos os commits da branch, mais um commit extra de “merge”.
+	•	Squash and merge: junta tudo num só commit. Muitas equipas usam esta por defeito.
+	•	Rebase and merge: entram todos os commits, mas sem o commit extra de “merge”.
+Na prática, para ti: podes fazer os commits pequenos que quiseres na tua branch, sem te preocupares com mensagens perfeitas. Se a equipa usar “Squash and merge”, na main só fica um commit limpo. Normalmente é quem revê e aceita o PR que escolhe a opção, mas se te pedirem para fazer squash, é isto.
