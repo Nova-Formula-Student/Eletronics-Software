@@ -1,1 +1,22 @@
-Espero ter feito isto bem...
+O commit squash (ou "squash and merge") no GitHub é o processo de combinar vários commits de um pull request (PR) em um único commit no momento da mesclagem com a ramificação principal (como a main ou master).
+
+O que acontece quando você faz squash?
+
+• Antes do squash: Você pode ter feito 10 ou 15 pequenos commits enquanto trabalhava em uma funcionalidade (ex: "corrige erro", "ajusta botão", "testando de novo").
+• Depois do squash: O GitHub compacta todas essas alterações em um único commit limpo na branch principal, descartando o histórico bagunçado dos commits intermediários.
+• O código muda? Não. O estado final dos arquivos continua exatamente o mesmo; o que muda é apenas a organização do histórico.
+
+Por que usar?
+
+• Histórico limpo: Evita poluir a linha do tempo do projeto com dezenas de mensagens temporárias ou incompletas.
+• Facilita revisões e reversões: Se algo der errado no futuro, é muito mais fácil entender ou reverter um único commit bem documentado do que rastrear cinco commits quebrados.
+• Organização do Pull Request: Você pode trabalhar livremente commitando a cada pequena alteração e, no final, entregar uma única "unidade lógica" de código.
+
+Como fazer no GitHub?
+
+1. Abra o seu Pull Request no GitHub.
+2. Quando a revisão estiver aprovada, vá até o botão verde de merge.
+3. Em vez de clicar apenas em Merge, clique na seta ao lado do botão e selecione "Squash and merge".
+4. Edite a mensagem do novo commit consolidado (se desejar) e confirme a operação.
+Você também pode fazer isso manualmente no terminal do Git usando o comando interativo git rebase -i HEAD~N.
+Se quiser, posso te explicar como fazer esse processo direto pelo terminal usando o git rebase -i ou como configurar as regras do repositório no GitHub para obrigar ou desabilitar o squash.
