@@ -1,0 +1,3 @@
+Git Commit Squash
+
+O commit squash é uma funcionalidade do Git que permite juntar vários commits num único commit. É utilizado para manter o histórico do projeto mais limpo e organizado, evitando ter muitos commits pequenos com alterações semelhantes, como correções de erros ou pequenos ajustes. Desta forma, em vez de apresentar vários commits separados, fica apenas um commit com todas as alterações agrupadas, facilitando a compreensão do trabalho realizado e a análise do código pela equipa.
